@@ -19,13 +19,12 @@ const data =
     {name: "Health Issues", value: 29},
 ];
 
-const COLORS = ["#ef4444", "#f97316", "#facc15", "#a855f7", "#3b82f6"];
-
+const COLORS = ["#1447e6","#1447e6", "#14B8A6", "#1c398e", "#162456"];
 
 export default function NonEV()
 {
     return(
-        <section className="w-full max-w-3xl mt-20 text-center font-mono">
+        <section id="NonEV" className="w-full max-w-3xl mt-20 text-center font-mono">
             <h2 className="text-2xl font-bold mb-10 font-mono">
                 Socieal Downside of Non-Electric Vehicles 
             </h2>
