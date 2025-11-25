@@ -22,8 +22,8 @@ const data =
 export default function ElectricCars()
 {
     return(
-        <section className="w-[100%] max-w-xl mt-15">
-            <h2 className="h-44 w-full bg-white/10 rounded-xl p-3 text-center text-4xl font-mono">
+        <section id="EV" className="w-[100%] max-w-xl mt-15 mx-auto mt-50">
+            <h2 className="h-44 w-full bg-white/10 rounded-xl p-3 text-center text-2xl font-mono">
                 Societal Benefits of Electric Cars
                 <p className="text-sm text-center mt-5">
                     Impacts such as Lower Carbon Emissions, Energy Efficiency, Less Noise, Air Quality, & Fuel Savings 
