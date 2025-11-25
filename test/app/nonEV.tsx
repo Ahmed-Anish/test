@@ -24,7 +24,7 @@ const COLORS = ["#1447e6","#1447e6", "#14B8A6", "#1c398e", "#162456"];
 export default function NonEV()
 {
     return(
-        <section id="NonEV" className="w-full max-w-3xl mt-20 text-center font-mono">
+        <section id="NonEV" className="w-full max-w-3xl mt-22 text-center font-mono">
             <h2 className="text-2xl font-bold mb-10 font-mono">
                 Socieal Downside of Non-Electric Vehicles 
             </h2>

@@ -22,8 +22,8 @@ const data =
 export default function ElectricCars()
 {
     return(
-        <section id="EV" className="w-[100%] max-w-xl mt-15 mx-auto">
-            <h2 className="h-44 w-full bg-white/10 rounded-xl p-3 text-center text-2xl font-mono font-bold">
+        <section id="EV" className="w-full max-w-3xl mt-20 text-center font-mono">
+            <h2 className="text-2xl font-bold mb-10 font-mono">
                 Societal Benefits of Electric Cars
             </h2>
             <p className="text-sm text-center mt-">
@@ -41,9 +41,7 @@ export default function ElectricCars()
                     </BarChart>
                 </ResponsiveContainer>
             </div>
-            <p className="text-sm text-center mt-4 text-black font-mono">
-                These scores represents the advantages through the use of electric cars! 
-            </p>
+            
         </section>
     );
 }

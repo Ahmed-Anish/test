@@ -17,9 +17,9 @@ const COLORS = ["#1447e6","#1447e6", "#14B8A6", "#1c398e", "#162456"];
 export default function Rideshare() {
   return (
     <>
-      <section id="RideShare" className="w-full h-full max-w-xl mt-15 mx-auto">
+      <section id="RideShare" className="w-full h-full max-w-xl mt-15 mx-auto font-mono">
         <div>
-          <h2 className="w-full rounded-xl p-3 text-center text-2xl font-mono">
+          <h2 className="w-full rounded-xl p-3 text-center text-2xl font-mono font-bold">
             Ride Share
           </h2>
           <p className="text-sm text-center mt-5">

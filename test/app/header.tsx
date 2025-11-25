@@ -23,7 +23,7 @@ export default function Header({
           />
         </button>
       </div>
-      <nav className="flex space-x-2 bg-zinc-100 rounded-full p-4 text-lg mx-auto text-white! *:rounded-full *:p-2">
+      <nav className="flex space-x-2 bg-zinc-100 rounded-full p-4 text-lg mx-auto text-white! *:rounded-full *:p-2 font-mono">
         <a className="btn" href="#NonEV">Non Electric Vehicles </a>
         <a className="btn" href="#RideShare">Ride sharing </a>
         <a className="btn" href="#EV">Electrical vehicles </a>
