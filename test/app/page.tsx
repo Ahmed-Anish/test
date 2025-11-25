@@ -1,21 +1,28 @@
-import Image from "next/image";
+"use client";
+
 import Header from "./header";
 import NonEV from "./nonEV";
 import Rideshare from "./rideshare";
 import ElectricCars from "./electricCars";
+import { useState,useEffect } from "react";
 
 
 export default function Home() {
+  const [theme,setTheme] = useState<boolean>(false);
+    useEffect(() => {
+    if (theme) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [theme]);
+
   return (
-    <div className="flex min-h-screen items-center justify-center ">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16  sm:items-start">
-        <Header />
-        <h1>Ford</h1>
-        <h2>(Future Mobility Home)</h2>
+    <main className="flex flex-col space-y-8 p-1 h-screen">
+        <Header theme={theme} setTheme={setTheme}/>
         <ElectricCars />
         <Rideshare />
         <NonEV />
-      </main>
-    </div>
+    </main>
   );
 }
