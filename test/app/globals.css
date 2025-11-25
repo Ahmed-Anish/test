@@ -2,6 +2,7 @@
 
 :root {
   --background: var(--zinc-50);
+  --second-color:var(--zinc-200);
   --foreground: #171717;
   --text-color: black;
 }
@@ -23,6 +24,10 @@ body {
 .dark{
   --background: var(--color-zinc-800);
   --text-color: white;
+  --second-color: var(--color-zinc-700);
+}
+.secondary{
+  background: var(--second-color)!important;
 }
 .btn{
   @apply rounded-full bg-blue-800 hover:bg-blue-900 cursor-pointer;
