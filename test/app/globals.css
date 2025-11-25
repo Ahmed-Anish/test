@@ -19,7 +19,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text-color);
-  @apply p-0 m-0;
+  @apply p-0 m-0 scroll-smooth;
 }
 .dark{
   --background: var(--color-zinc-800);

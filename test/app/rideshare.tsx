@@ -5,6 +5,7 @@ import {
   Cell,
   Tooltip,
   Legend,
+  PieLabelRenderProps,
 } from "recharts";
 const data = [
   { name: "Range", value: 90 },
@@ -13,11 +14,13 @@ const data = [
   { name: "Safety", value: 80 },
   { name: "Price", value: 70 },
 ];
-const COLORS = ["#1447e6","#1447e6", "#14B8A6", "#1c398e", "#162456"];
+const COLORS = ["#1447e6", "#1447e6", "#14B8A6", "#1c398e", "#162456"];
 export default function Rideshare() {
   return (
     <>
-      <section id="RideShare" className="w-full h-full max-w-xl mt-15 mx-auto font-mono">
+      <section
+        id="RideShare"
+        className="w-full h-full max-w-xl mt-15 mx-auto font-mono">
         <div>
           <h2 className="w-full rounded-xl p-3 text-center text-2xl font-mono font-bold">
             Ride Share
@@ -39,7 +42,7 @@ export default function Rideshare() {
                 outerRadius={100}
                 paddingAngle={4}
                 label={({ name, percent }) =>
-                  `${name} ${percent*100}%`
+                  percent != null ? `${name} ${Math.round(percent * 100)}%` : ""
                 }>
                 {data.map((_, i) => (
                   <Cell key={i} fill={COLORS[i % COLORS.length]} />
